@@ -1,0 +1,35 @@
+/*  
+    navbar-fixed-top
+    --sm-max-width: 480px;
+    --md-max-width: 996px;
+    --lg-max-width: 1600px;
+
+ */
+
+/* Home Nav */
+
+/* 1190-lg  768-sm  */
+
+.logo {
+  width: 150px;
+}
+
+.search_bar {
+  background-color: #f0f5ffff;
+  height: 2.5rem;
+}
+
+.search_input {
+  background-color: #f0f5ffff;
+}
+
+.no_focus_outline:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 100px;
+    padding-top: 10px;
+  }
+}
