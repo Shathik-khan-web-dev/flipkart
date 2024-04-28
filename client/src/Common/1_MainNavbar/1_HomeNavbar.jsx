@@ -1,19 +1,18 @@
 import React from "react";
-import logo from "../../Assets/logo.png";
-import { Container, Col, Row } from "react-bootstrap";
+import logo from "../../Assets/logoOne.png";
+import { Container } from "react-bootstrap";
 import { BiSearch } from "react-icons/bi";
 import { CgProfile } from "react-icons/cg";
 import { AiOutlineDown, AiOutlineShop } from "react-icons/ai";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { FiShoppingCart } from "react-icons/fi";
-import "../3_CommonCss/Common.css"
+import "../3_CommonCss/Common.css";
 
 const HomeNavbar = () => {
   return (
     <Container
       fluid
       className="p-2 d-flex justify-content-evenly bg-white position-fixed z-3 border border-2">
-
       <span>
         {" "}
         <img

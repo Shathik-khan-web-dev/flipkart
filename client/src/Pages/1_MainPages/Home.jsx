@@ -1,11 +1,13 @@
 import React from "react";
 import HomeNavbar from "../../Common/1_MainNavbar/1_HomeNavbar";
-import { Container, Col, Row } from "react-bootstrap";
+import ProductNavbar from "../../Common/1_MainNavbar/2_ProductsNavbar";
+import { Container } from "react-bootstrap";
 
 const Home = () => {
   return (
     <div className="app_container">
-      <HomeNavbar />
+      {/* <HomeNavbar /> */}
+      <ProductNavbar />
 
       <Container fluid>
         <h5>Home</h5>
