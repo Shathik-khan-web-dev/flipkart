@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Components/Pages/Home";
-// import SignIn from "./Components/Pages/SignIn";
-// import Grocery from "./Components/Pages/Grocery";
-// import Mobiles from "./Components/Pages/Mobiles";
-// import Appliances from "./Components/Pages/Appliances";
-// import Travel from "./Components/Pages/Travel";
-import PageNotFound from "./Components/Pages/404Error";
+import Home from "./Pages/1_MainPages/Home";
+// import SignIn from "./Pages/SignIn";
+// import Grocery from "./Pages/Grocery";
+// import Mobiles from "./Pages/Mobiles";
+// import Appliances from "./Pages/Appliances";
+// import Travel from "./Pages/Travel";
+import PageNotFound from "./Common/404Error";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-            {/* <Route path="/grocery" element={<Grocery />} />
+          {/* <Route path="/grocery" element={<Grocery />} />
             <Route path="/sign-in" element={<SignIn />} />
             <Route path="/mobiles" element={<Mobiles />} />
             <Route path="/appliances" element={<Appliances />} />

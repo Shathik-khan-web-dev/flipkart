@@ -1,9 +1,9 @@
 import React from "react";
-import { HomeNavImages } from "../Assets/Images/1_Home/Index";
+import { HomeNavImages } from "../../Assets/Images/1_Home/Index";
 
 const Home = () => {
   return (
-    <div> 
+    <div>
       Home
       {HomeNavImages.map((navImage, index) => (
         <div key={index}>
