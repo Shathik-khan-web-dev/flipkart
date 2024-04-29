@@ -6,7 +6,7 @@ import { CgProfile } from "react-icons/cg";
 import { AiOutlineDown, AiOutlineShop } from "react-icons/ai";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { FiShoppingCart } from "react-icons/fi";
-import "../3_CommonCss/Common.css";
+import "../Common.css";
 
 const HomeNavbar = () => {
   return (

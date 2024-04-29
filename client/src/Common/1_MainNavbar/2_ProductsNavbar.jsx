@@ -1,10 +1,10 @@
 import React from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { BiSearch, BiChevronDown } from "react-icons/bi";
 import { FaShoppingCart } from "react-icons/fa";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import logoTwo from "../../Assets/logoTwo.png";
-import "../3_CommonCss/Common.css";
+import "../Common.css";
 
 const ProductsNavbar = () => {
   return (
