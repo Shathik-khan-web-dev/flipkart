@@ -2,14 +2,15 @@ import React from "react";
 import { Container, Row } from "react-bootstrap";
 import { BiSearch, BiChevronDown } from "react-icons/bi";
 import { FaShoppingCart } from "react-icons/fa";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import logoTwo from "../../Assets/logoTwo.png";
 import "../3_CommonCss/Common.css";
 
 const ProductsNavbar = () => {
   return (
     <div className="position-fixed w-100 z-3">
-      <Container fluid className="bg-primary ">
-        <div className="container p-2 text-center d-flex justify-content-evenly align-items-center">
+      <Container fluid className=" bg-primary">
+        <div className="container bg-primary p-2 text-center d-flex justify-content-evenly align-items-center">
           <div>
             <img
               src={logoTwo}
@@ -58,68 +59,73 @@ const ProductsNavbar = () => {
         </div>
       </Container>
 
-      <Row
-        fluid
-        className="bg-white py-2 gap-4 d-flex flex-nowrap overflow-auto justify-content-center align-items-center text-center shadow-sm">
-        <span >
+      <div className="bg-white product_bottomNav py-2 d-flex justify-content-md-center overflow-x-scroll gap-4 px-3 shadow-sm ">
+        <div className="d-md-none">
+          <IoIosArrowBack className="fs-3 opacity-50" />
+        </div>
+        <div>
           Electronic's
           <BiChevronDown
             size={15}
             className="fw-bold"
             style={{ color: "#c1c2c5ff" }}
           />
-        </span>
-        <span>
-          Tv's & Appliances 
+        </div>
+        <div>
+          Tv's & Appliances
           <BiChevronDown
             size={15}
             className="fw-bold"
             style={{ color: "#c1c2c5ff" }}
           />
-        </span>
-        <span>
+        </div>
+        <div>
           Men
           <BiChevronDown
             size={15}
             className="fw-bold"
             style={{ color: "#c1c2c5ff" }}
           />
-        </span>
-        <span>
+        </div>
+        <div>
           Women
           <BiChevronDown
             size={15}
             className="fw-bold"
             style={{ color: "#c1c2c5ff" }}
           />
-        </span>
-        <span>
+        </div>
+        <div>
           Baby & Kids
           <BiChevronDown
             size={15}
             className="fw-bold"
             style={{ color: "#c1c2c5ff" }}
           />
-        </span>
-        <span>
+        </div>
+        <div>
           Home & Furniture
           <BiChevronDown
             size={15}
             className="fw-bold"
             style={{ color: "#c1c2c5ff" }}
           />
-        </span>
-        <span>
+        </div>
+        <div>
           Sports, Books & More
           <BiChevronDown
             size={15}
             className="fw-bold"
             style={{ color: "#c1c2c5ff" }}
           />
-        </span>
-        <span>Flights</span>
-        <span>Offer Zone</span>
-      </Row>
+        </div>
+        <div>Flights</div>
+        <div>Offer Zone</div>
+
+        <div className="d-md-none">
+          <IoIosArrowForward className="fs-3 opacity-50" />
+        </div>
+      </div>
     </div>
   );
 };

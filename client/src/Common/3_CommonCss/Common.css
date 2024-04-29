@@ -20,11 +20,15 @@
 }
 
 .no_focus_outline:focus {
-  outline: none;
+  outline: none !important;
 }
 
 /* product nav */
 
-.imgScroll {
-  width: 0 !important;
+.product_bottomNav > div {
+  white-space: nowrap;
+}
+
+.product_bottomNav::-webkit-scrollbar {
+  display: none;
 }
