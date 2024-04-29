@@ -32,7 +32,7 @@ const GroceryNavbar = () => {
           </div>
           {/* drop down */}
           <div className="d-flex justify-content-center text-center text-white ">
-            <MdLocationOn size={25} className="fw-bold mt-2" />
+            <MdLocationOn size={25} className="fw-bold mt-md-2" />
 
             <h6 className="text-center py-2 d-none d-md-flex">Select city</h6>
             <BiChevronDown
@@ -89,7 +89,7 @@ const GroceryNavbar = () => {
               className=""
             />
 
-            <div className="d-flex justify-content-center ">
+            <div className="justify-content-center d-none d-md-flex">
               <h6 className="text-center py-2">{Grocery.title}</h6>
               <BiChevronDown size={20} className="mt-2" />
             </div>
