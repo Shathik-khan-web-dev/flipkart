@@ -76,9 +76,8 @@ const GroceryNavbar = () => {
         <div className="d-md-none d-flex justify-content-center align-items-center">
           <IoIosArrowBack className="fs-3 opacity-50" />
         </div>
-        {/* <div className="bg-white product_bottomNav py-2 d-flex justify-content-md-center overflow-x-scroll gap-4 px-3 shadow-sm"> */}
         {GroceryNav.map((Grocery) => (
-          <div
+          <div 
             key={Grocery.id}
             className=" d-flex flex-column justify-content-center align-items-center">
             <img
